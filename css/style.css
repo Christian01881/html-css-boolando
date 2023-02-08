@@ -25,6 +25,7 @@ header:first-child div{
 
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav{
@@ -66,8 +67,9 @@ main div img{
 }
 
 .card{
-    width: calc((100% / 3 ) - 10px);
+    width: calc((100% / 3 ) - 20px);
     position: relative;
+    margin: 0 10px;
 }
 
 .image2{
@@ -122,6 +124,10 @@ main div img{
 
 .card:hover .box-heart{
     color: var(--bg-pop2);
+}
+
+.m-card{
+    margin-top: 50px;
 }
 
 
