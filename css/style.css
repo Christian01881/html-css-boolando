@@ -32,6 +32,7 @@ nav{
     padding: 15px 0;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 header div img{
@@ -41,6 +42,7 @@ header div img{
 header{
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 a{
@@ -52,4 +54,72 @@ a{
 a:hover{
     color: var(--bg-pop2);
     text-decoration: underline;
+}
+
+/* main */
+.p-top{
+    padding-top: 120px;
+}
+
+main div img{
+    width: 100%;
+}
+
+.card{
+    width: calc((100% / 3 ) - 10px);
+    position: relative;
+}
+
+.image2{
+    display: none;
+}
+
+.card:hover .image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    visibility: visible;
+}
+
+.red{
+    color: var(--bg-pop2);
+    font-size: 13px;
+}
+
+.line{
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.box-heart{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: var(--bg-heart);
+    font-size: 25px;
+    padding: 12px 18px 12px 18px;
+    z-index: 2;
+}
+
+.box-pop{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 2;
+}
+
+.pop-red{
+    background-color: var(--bg-pop2);
+    padding: 3px 5px;
+}
+
+.pop-green{
+    background-color: var(--bg-pop1);
+    padding: 3px 5px;
+}
+
+.card:hover .box-heart{
+    color: var(--bg-pop2);
 }
