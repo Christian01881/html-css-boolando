@@ -30,15 +30,17 @@ header:first-child div{
 nav{
     color: var(--bg-heart);
     padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div img{
     max-width: 150px;
 }
 
-header nav{
-    justify-content: space-between;
-    align-items: center;
+header{
+    position: fixed;
+    width: 100%;
 }
 
 a{
