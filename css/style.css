@@ -33,7 +33,7 @@ nav{
     padding: 15px 0;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 header div img{
@@ -43,10 +43,10 @@ header div img{
 header{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
-a{
+header div a{
     text-decoration: none;
     color: var(--bg-heart);
     padding: 0 8px;
@@ -130,4 +130,32 @@ main div img{
     margin-top: 50px;
 }
 
+/* footer */
+.bg-footer{
+    background-color: var(--bg-footer);
+    padding: 30px 0 ;
+}
 
+.s-between{
+    justify-content: space-between;
+}
+
+footer{
+    color: var(--bg-heart);
+    margin-top: 80px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: var(--bg-heart);
+    padding-right: 10px;
+}
+
+h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer div h4{
+    padding-bottom: 10px ;
+}
